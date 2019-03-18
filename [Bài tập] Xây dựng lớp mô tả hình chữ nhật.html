@@ -1,0 +1,30 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+        "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+    <title>Xây dựng lớp hình chữ nhật</title>
+</head>
+<body>
+
+<script>
+    let Rectangle = function (a, b) {
+
+        this.getWidth = function () {
+            return a;
+        };
+        this.getLength = function () {
+            return b;
+        };
+        this.getPerimeter = function () {
+            return (a + b) * 2;
+        };
+        this.getArea = function () {
+            return a * b;
+        }
+    };
+    let c = new Rectangle(2, 5);
+    alert("Radius : " + c.getPerimeter() + " ; area : " +c.getArea());
+</script>
+
+</body>
+</html>
